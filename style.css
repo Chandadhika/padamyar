@@ -1,0 +1,133 @@
+/* Root Selector */
+:root {
+    --unique-color: rgb(188, 0, 0);
+    --primary-color: #fce138;
+    --secondary-color: #05f529;
+    --tertiary-color: #39a6b2;
+    --trans-color: transparent;
+    --background-color: rgba(197, 214, 182, 0.584);
+}
+
+/* Universal Selector */
+* {
+    box-sizing: border-box;
+    margin: 3%;
+    padding: 0;
+    font-size: 20px;
+}
+
+/* Hr B */
+hr {
+    height: 3px;
+    background-color: var(--secondary-color);
+    margin: 10;
+    color: var(--primary-color);
+}
+
+/* caption */
+h1 {
+    font-size: 2.5em;
+    color: var(--secondary-color);
+}
+
+h2 {
+    font-size: 1.5em;
+    color: var(--tertiary-color);
+}
+
+article p:first-child::first-letter {
+    font-weight: bold;
+    font-size: 4.3em;
+    color: var(--tertiary-color);
+    background-color: var(--secondary-color);
+    float: left;
+    padding: 0 20px 0 0;
+    margin: -15px;
+    text-shadow: 2px 3px 2px var(--secondary-color);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+}
+
+/* article p:first-child::first-line {
+    font-weight: bold;
+    color: var(--tertiary-color);
+    text-transform: uppercase;
+} */
+ /* caption end */
+
+ /* Readmore */
+ /* Hide the second piece of text by default */
+p.readmore .second {
+    display: none;
+}
+
+/* hide the first piece of text on hover */
+p.readmore:hover .first {
+    display: none;
+}
+
+/* re-show the second piece of text on hover */
+p.readmore:hover .second {
+    display: none;
+}
+/* Readmore Ends */
+
+/* table start */
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(140 140 140);
+    font-family: sans-serif;
+    font-size: .9rem;
+    letter-spacing: 1px;
+}
+
+caption {
+    caption-side: bottom;
+    padding: 10px;
+    font-weight: bold;
+    color: rgb(255, 217, 0);
+}
+
+thead, tfoot {
+    background-color: rgb(228, 240, 245);
+}
+
+th,td {
+    border: 1px solid rgb(114, 112, 112);
+    padding: 8px 10px;
+}
+
+thead tr th {
+    color: var(--unique-color);
+    font-weight: 1.5em;
+}
+
+tbody tr th, td {
+    text-align: left;
+    line-height: 1.5;
+}
+
+tbody > tr:nth-last-of-type(even) {
+    background-color: rgb(237, 238, 242);
+}
+
+tfoot th {
+    text-align: right;
+}
+
+tfoot td {
+    font-weight: bold;
+}
+
+tbody tr th, tfoot tr th {
+    color: var(--tertiary-color);
+}
+
+tfoot tr th span {
+    color: var(--unique-color);
+}
+tfoot tr th {
+    text-align: center;
+}
+/* table ends */
